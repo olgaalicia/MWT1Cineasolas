@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    padding: 0px;
+    box-sizing: border-box;
+    margin: auto;
+    font-family: 'Josefin Sans', sans-serif;
+}
+/* estilos generales */
+a{
+    color: rgb(20, 1, 20);
+    text-decoration: none;
+    display: block;
+}
+ul{
+    list-style: none;
+}
+
+li{
+    color: rgb(77, 3, 77);
+    display:block;
+    width: 100%;
+}
+header nav a:hover{
+    background-color: rgb(170, 131, 209);
+    display: block;
+}
+/* terminan estilos generales */
+/* estilos generales del header */
+.container{
+    background-color: rgb(252, 218, 252);
+    display: flex;
+    flex-wrap: wrap;
+
+
+   /* header*/
+}
+header{
+    background-color: #A689E3;
+    font-size: 20px;
+    flex-basis: 100%;
+    display: flex;    
+}
+header nav{
+    flex-grow: 1;
+}
+header img{
+    flex-basis: 15px;
+    height: 100px;
+    flex-grow: 0;
+}
+header nav ul li{
+    position: relative;
+}
+
+header nav ul li ul{
+    position: absolute;
+
+}
+/*estilos del primer nivel de la barra de navegación*/
+
+header nav ul ul{
+    display: none;
+}
+
+header> nav> ul{
+    display: flex;
+}
+
+/* estilos al segundo nivel*/
+header> nav> ul> li:hover> ul{
+    background-color:#A689E3;
+    display: block;
+    top: 100%;
+    width: 100%;
+}
+
+.contenedor-principal{
+    background-color: #E6E6E6;
+    display: grid;
+    grid-template: 
+    "main aside" 700px
+    "section section" 1000px/80% 20%;
+}
+.main{
+    border: 2px solid black;
+    grid-area: main;
+}
+.aside{
+    border: 2px solid black;
+    font-size: 25px;
+    grid-area: aside;
+    background-color: #88D1BD;
+    padding: 10px;
+    width: 100%;
+    height: 50%;
+}
+.section{
+    border: 2px solid black;
+    background-color: blue;
+    grid-area: section;
+}
+.acerca{
+    font-size: 30px;
+    padding: 30px;
+}
+.articulos-principales{
+    border: 2px solid crimson;
+}
+
+
+
+.reseña{
+    background-color: lawngreen;
+    display: grid;
+    grid-template: 
+    "reseña reseña reseña" 50px
+    "peli1 peli2 peli3" auto/1fr 1fr 1fr;
+}
+.peli1{
+    grid-area: peli1;
+}
+.peli2{
+    grid-area: peli2;
+}
+.peli3{
+    grid-area: peli3;
+}
+.link-reseñas{
+    grid-area: reseña;
+}
+.peliculas{
+    padding: 20px;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+h3{
+    padding-top: 20px;
+    font-size: 30px;
+    margin: auto;
+}
+h4{
+    padding: 20px;
+}
+.peli-descrip{
+    padding-top: 50px;
+}
+
+.musica{
+    font-size: 30px;
+    height: 100px;
+    padding: 30px;
+}
+.favoritas{
+    font-size: 30px;
+    height: 100px;
+    padding: 30px;
+}
+
+footer{
+    background-color:#C998DA ;
+    font-size: 20px;
+    flex-basis: 100%;
+    display: flex;
+    padding: 10px;    
+}
+
+footer nav{
+flex-basis: 100%;
+}
+footer nav ul{
+    flex-basis: 100%;
+    display: flex;
+}
