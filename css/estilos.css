@@ -83,21 +83,25 @@ header> nav> ul> li:hover> ul{
     "section section" 1000px/80% 20%;
 }
 .main{
-    border: 2px solid black;
+   /* border: 2px solid black;*/
     grid-area: main;
 }
 .aside{
-    border: 2px solid black;
+   /* border: 2px solid black;*/
     font-size: 25px;
     grid-area: aside;
     background-color: #88D1BD;
     padding: 10px;
     width: 100%;
-    height: 50%;
+    height: 80%;
+}
+
+.aside li{
+    padding-bottom: 10px;
 }
 .section{
-    border: 2px solid black;
-    background-color: blue;
+ 
+    background-color: rgb(170, 131, 209);
     grid-area: section;
 }
 .acerca{
@@ -106,12 +110,16 @@ header> nav> ul> li:hover> ul{
 }
 .articulos-principales{
     border: 2px solid crimson;
+    display: grid;
+    grid-template-areas: ". musica ." 
+                         " . . favoritas"
+                         "reseña reseña reseña";
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,4em) auto;
 }
-
-
-
 .reseña{
-    background-color: lawngreen;
+    grid-area: reseña;
+    background-color: #C998DA;
     display: grid;
     grid-template: 
     "reseña reseña reseña" 50px
@@ -149,11 +157,13 @@ h4{
 }
 
 .musica{
+    grid-area: musica;
     font-size: 30px;
     height: 100px;
     padding: 30px;
 }
 .favoritas{
+    grid-area: favoritas;
     font-size: 30px;
     height: 100px;
     padding: 30px;
@@ -168,7 +178,7 @@ footer{
 }
 
 footer nav{
-flex-basis: 100%;
+    flex-basis: 100%;
 }
 footer nav ul{
     flex-basis: 100%;
