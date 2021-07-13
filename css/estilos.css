@@ -90,7 +90,7 @@ header> nav> ul> li:hover> ul{
    /* border: 2px solid black;*/
     font-size: 25px;
     grid-area: aside;
-    background-color: #88D1BD;
+    background-color: #00B294;
     padding: 10px;
     width: 100%;
     height: 80%;
@@ -101,15 +101,22 @@ header> nav> ul> li:hover> ul{
 }
 .section{
  
-    background-color: rgb(170, 131, 209);
+    background-color: skyblue;
     grid-area: section;
 }
 .acerca{
     font-size: 30px;
     padding: 30px;
 }
+body div section article section.musica:hover{
+    background-color: #01AFB6;
+    display: block;
+}
+body div section article section.favoritas:hover{
+    background-color: #01AFB6;
+    display: block;
+}
 .articulos-principales{
-    border: 2px solid crimson;
     display: grid;
     grid-template-areas: ". musica ." 
                          " . . favoritas"
